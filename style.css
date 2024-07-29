@@ -39,8 +39,8 @@
   }
 
   .crsr {
-    height: 2vw;
-    width: 2vw;
+    height: 1.3vw;
+    width: 1.3vw;
     background: linear-gradient(#000, #fff, grey);
     z-index: 10;
     position: fixed;
