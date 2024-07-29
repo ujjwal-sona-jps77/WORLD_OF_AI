@@ -38,28 +38,14 @@
     background: linear-gradient(blue, lightblue);
   }
 
-  /*.crsr {
+  .crsr {
     height: 2vw;
     width: 2vw;
     background: linear-gradient(#000, #fff, grey);
     z-index: 10;
     position: fixed;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }*/
-
-  .circle {
-  height: 24px;
-  width: 24px;
-  border-radius: 24px;
-  background-color: black;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 99999999; /* so that it stays on top of all other elements */
-}
-
+  }
 
   main {
     position: relative;
