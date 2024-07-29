@@ -46,6 +46,7 @@
     position: fixed;
     border-radius: 50%;
 mix-blend-mode: difference;
+transition: all ease 1s;
   }
 
   main {
