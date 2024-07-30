@@ -554,7 +554,6 @@
     align-items: center;
     padding: 2vw;
     z-index: 99999;
-    backdrop-filter: blur(1px);
   }
 
   .nav > #head_m {
