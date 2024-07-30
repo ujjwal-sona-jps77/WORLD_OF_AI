@@ -560,8 +560,8 @@
   .nav > #head_m {
     font-family: "Indie Flower", cursive;
     font-size: 10vw;
-    color: white;
-    mix-blend-mode: difference;
+    color: #fff;
+    font-weight: 900;
   }
 
   .nav i {
