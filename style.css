@@ -4,12 +4,14 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Hind:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @media (min-width: 1000px) and (max-width: 2200px) {
   * {
@@ -37,14 +39,17 @@
     background: linear-gradient(blue, lightblue);
   }
 
-  .crsr {
-    height: 2vw;
-    width: 2vw;
-    background: linear-gradient(#000, #fff, grey);
-    z-index: 10;
-    position: fixed;
+  .pc .crsr {
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: difference;
   }
 
   main {
@@ -71,7 +76,7 @@
     z-index: 99;
   }
 
-  nav>img {
+  nav > img {
     width: 5vw;
     height: 90%;
     border-radius: 1vw;
@@ -128,8 +133,13 @@
     left: 0;
     bottom: 0;
     height: 3px;
-    width: 100%;
+    width: 0%;
     background-color: #333;
+    transition: all ease 1s;
+  }
+
+  #welcome > #wel:hover {
+    width: 100%;
   }
 
   #wel .page1 #hero {
@@ -192,15 +202,15 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    border-top-left-radius: 7vw;
-    border-top-right-radius: 7vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
     padding: 2vw 2vw;
   }
 
   .page4 .slider {
     width: 100%;
     height: 70vh;
-    background-color: rgba(139, 139, 139, 0.212);
+    /* background-color: rgba(139, 139, 139, 0.212); */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -209,8 +219,8 @@
   }
 
   .page4 .slider .child {
-    width: 25vw;
-    height: 90%;
+    width: 28vw;
+    height: 100%;
     /* background-color: lightblue; */
     background: #00000011;
     margin: 1.1vw;
@@ -239,8 +249,24 @@
   .child h1 {
     font-family: "Josefin Sans", sans-serif;
     margin-top: 1.9vw;
-    color: white;
+    color: rgb(3, 255, 192);
     font-weight: 600;
+    font-size: 1vw;
+  }
+
+  #chat {
+    color: #16a180;
+    font-size: 2.9vw;
+  }
+
+  #copilot {
+    color: #2236a9;
+    font-size: 1.7vw;
+  }
+
+  #meta {
+    color: #21d8f8;
+    font-size: 2vw;
   }
 
   .child P {
@@ -255,18 +281,152 @@
     right: 3.8vw;
     bottom: 2.7vw;
     font-size: 2vw;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .page5 {
-    background-color: rgb(99, 99, 99);
-    border-top-left-radius: 7vw;
-    border-top-right-radius: 7vw;
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
     width: 100%;
-    height: 100vh;
+    position: relative;
+    padding: 6vw;
+    min-height: 100vh;
   }
-  .mobile{
+
+  .elem {
+    /* background-color: salmon; */
+    top: 10vw;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .elem img {
+    position: absolute;
+    opacity: 0;
+    width: 21vw;
+    height: 41vh;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+  }
+  .elem img:nth-child(1) {
+    left: 2%;
+  }
+  .elem img:nth-child(3) {
+    right: 5%;
+  }
+  .text-div {
+    height: 16vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+  }
+  .elem h1 {
+    font-size: 6.3vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+    font-family: "Poppins", sans-serif;
+    color: #818181;
+  }
+
+  .elem:hover h1 {
+    transform: translateY(-100%);
+    color: rgb(29, 241, 241);
+  }
+  .elem:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  .mobile {
     display: none;
+  }
+
+  .page6 {
+    width: 100%;
+    min-height: 110vh;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+  }
+
+  .slider {
+    white-space: nowrap;
+    overflow-x: auto;
+    top: 1.7vw;
+    position: relative;
+    overflow-y: hidden;
+    /* margin-top: 6vh; */
+    margin-bottom: 2vh;
+    transition: all ease 2.7s;
+  }
+
+  .slider .slider_1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .slider h1 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: "Dosis", sans-serif;
+    margin-right: 15px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider h1:hover {
+    color: rgb(55, 245, 245);
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .down {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 3vw;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .down h6 {
+    width: 50%;
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+  }
+
+  .change {
+    width: 20vw;
+    height: 45vh;;
+  }
+
+  footer {
+    width: 100%;
+    height: 60vh;
+    background-color: wheat;
   }
 }
 
@@ -283,6 +443,7 @@
   .main {
     position: relative;
     overflow: hidden;
+    background-image: url();
   }
 
   .nav {
@@ -353,7 +514,7 @@
     background-color: #3333;
   }
 
-  .slider::-webkit-scrollbar{
+  .slider::-webkit-scrollbar {
     display: none;
   }
 
@@ -395,14 +556,14 @@
   }
 
   .page2_m .slider_m .child_m p {
-      font-family: "Josefin Sans", sans-serif;
-      margin-top: 0.7vw;
-      color: #707070;
-      font-weight: 600;
-      width: 100%;
-      padding: 1vw;
-      font-size: 4.4vw;
-      margin-left: 3vw;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 0.7vw;
+    color: #707070;
+    font-weight: 600;
+    width: 100%;
+    padding: 1vw;
+    font-size: 4.4vw;
+    margin-left: 3vw;
   }
 
   #ar_right_m {
