@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
@@ -8,6 +7,7 @@
     src: url(./Gunsan.ttf);
 }
 
+/* Font's ( Taken From google Font's ) */
 
 * {
     margin: 0%;
@@ -25,6 +25,7 @@ main {
     position: relative;
     overflow: hidden;
 }
+
 
 .about-section {
     display: flex;
@@ -62,7 +63,7 @@ main {
     padding-right: 10vw;
     padding-top: 3vw;
     background: #ffffff;
-    background-color: rgba(0, 0, 0, 0.952);
+    background-color: rgb(0, 0, 0);
     
 }
 
@@ -97,10 +98,12 @@ main {
 }
 .Aayush {
     border-radius: .2vw;
+    cursor: not-allowed;
 }
 
 .ujjwal {
     border-radius: .2vw;
+    cursor: not-allowed;
 }
 
 .ujjwal2{
@@ -123,6 +126,44 @@ main {
     padding-bottom: 15px;
     padding-left: 10px;
 }
+
+.page2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(41, 40, 40));
+}
+.Batman{
+    font-size: 15.9vw;
+    font-family: gun;
+    color: #DBD6D0;
+    font-weight: 400;
+}
+
+
+
+.Batman::selection{
+    background-color: white;
+    color: #363333;
+}
+
+.hero::selection{
+    background-color: white;
+    color: #363333;
+}
+.center::selection{
+    background-color: white;
+    color: #363333;
+}
+.center2::selection{
+    background-color: white;
+    color: #363333;
+}
+
+
 
 
 .ri-instagram-line{
@@ -157,193 +198,4 @@ main {
     right: 4vw;
 }
 
-.page2{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(41, 40, 40));
-}
-.Batman{
-    font-size: 15.9vw;
-    font-family: gun;
-    color: #DBD6D0;
-    font-weight: 400;
-}
-=======
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
-
-@font-face {
-    font-family: gun;
-    src: url(./Gunsan.ttf);
-}
-
-
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-main {
-    position: relative;
-    overflow: hidden;
-}
-
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: 3.7vw;
-    background: rgb(0, 0, 0);
-    color:  #DBD6D0;
-    font-weight: 300;
-    font-family: "Rubik Maps", system-ui;
-
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-    
-    
-}
-
-.our-data {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 3vw;
-    background: #ffffff;
-    background-color: rgba(0, 0, 0, 0.952);
-    
-}
-
-.center {
-    font-size: 7vw;
-    padding-top: 2vw;
-    font-family: gun;
-    background-color: rgb(0, 0, 0);
-    color: #DBD6D0;
-}
-
-.center2 {
-    font-size: 2vw;
-    padding-top: 1vw;
-    background-color: rgb(0, 0, 0);
-    font-family: monospace;
-    color: #DBD6D0;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(290, 255, 255, .822);
-    margin: 80px;
-    width: 450px;
-    padding-top: 20px;
-    border-radius: 20px;
-    background: #eceaea;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-
-}
-.Aayush {
-    border-radius: .2vw;
-}
-
-.ujjwal {
-    border-radius: .2vw;
-}
-
-.ujjwal2{
-    padding-left: 10px;
-}
-
-.Aayush2{
-    padding-left: 10px;
-}
-
-.Title{
-    color: grey;
-    padding-top: 5px;
-    padding-left: 10px;
-}
-
-.title2{
-    color: rgb(80, 77, 77);
-    padding-top: 0px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-}
-
-
-.ri-instagram-line{
-    color: #DBD6D0;
-    font-size: 10vw;
-    position: absolute;
-    top: 5vw;
-    right: 5vw;
-}
-
-.ri-facebook-circle-fill{
-    color: #DBD6D0;
-    font-size: 10vw;
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
-}
-
-.ri-linkedin-box-fill{
-    color: #DBD6D0;
-    font-size: 10vw;
-    position: absolute;
-    top: 38vw;
-    left: 4vw;
-}
-
-.ri-twitter-x-line{
-    color: #DBD6D0;
-    font-size: 10vw;
-    position: absolute;
-    top: 38vw;
-    right: 4vw;
-}
-
-.page2{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(41, 40, 40));
-}
-.Batman{
-    font-size: 15.9vw;
-    font-family: gun;
-    color: #DBD6D0;
-    font-weight: 400;
-}
->>>>>>> 0a3925d6e85c89ec04607829aa6963d7d1869fb7

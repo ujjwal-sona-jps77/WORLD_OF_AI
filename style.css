@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Hind:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Hind:wght@300;400;500;600;700&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -45,7 +45,7 @@
     border-radius: 50%;
     position: fixed;
     background-color: #edbfff;
-    z-index: 8;
+    z-index: 999;
     transition: background-image ease 0.5s;
     background-position: center;
     background-size: cover;
@@ -62,6 +62,65 @@
     width: 100%;
     object-fit: cover;
     position: fixed;
+  }
+
+  .menu i {
+    font-size: 2vw;
+    transition: all ease 1s;
+  }
+
+  #close {
+    display: none;
+  }
+
+  .div_text {
+    width: 100%;
+    text-align: center;
+    height: 14vh;
+    /* background-color: cyan; */
+    overflow: hidden;
+    margin-bottom: .4vw;
+    position: relative;
+    padding: 0;
+    transition: all ease .4s;
+  }
+
+  .div_text li {
+    transition: all ease 1s;
+    border-bottom: 1px solid #000;
+  }
+
+  .div_text:hover li{
+    transform: translateY(-100%);
+  }
+
+  .menu_in {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: wheat;
+    z-index: 99;
+    top: 0;
+    right: -100%;
+    transition: all ease-in-out 1s;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .menu_in .in_elem {
+    /* background-color: red; */
+    width: 30vw;
+    height: 70%;
+    margin-left: 15vw;
+  }
+
+  .menu_in .in_elem li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 4.7vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   nav {
@@ -463,14 +522,30 @@
     background-size: contain; */
   }
 
+  .menu_in_m {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 99;
+    background-color: wheat;
+    transition: all ease-in-out 1s;
+  }
+
   .main > img {
     position: fixed;
     width: 100%;
     height: 100%;
   }
 
+  #close {
+    display: none;
+  }
+  
+
   .nav {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.192);
     position: fixed;
     width: 100%;
     height: 10vh;
@@ -479,10 +554,11 @@
     align-items: center;
     padding: 2vw;
     z-index: 99999;
+    backdrop-filter: blur(1px);
   }
 
   .nav > #head_m {
-    font-family: "Roboto Slab", serif;
+    font-family: "Indie Flower", cursive;
     font-size: 10vw;
     color: white;
     mix-blend-mode: difference;
@@ -574,6 +650,10 @@
     display: none;
   }
 
+  .page4_m::-webkit-scrollbar {
+    display: none;
+  }
+
   .page4_m .slider_m {
     width: 100%;
     height: 90vh;
@@ -648,32 +728,44 @@
 
   .page5_m {
     width: 100%;
-    height: 100vh;
-    background-color: #d8d8d8;
+    min-height: 100vh;
+    background-color: #000000;
     position: relative;
     z-index: 9;
   }
 
   .page5_m .llms {
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     column-rule: white;
     padding: 4.5vw;
+    margin-bottom: 1vw;
+    overflow: hidden;
+    /* background-color: cyan; */
     /* background-color: cyan; */
   }
 
   .page5_m .llms #h_ll {
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Indie Flower", cursive;
     font-weight: 900;
+    margin-bottom: 5vw;
+    margin-left: 3vw;
   }
 
   .page5_m .llms #d_llms {
-    color: white;
-    font-family: "Fira Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: "Indie Flower", cursive;
     margin-top: 2vw;
     font-size: 5vw;
-    line-height: 6vw;
+    line-height: 7vw;
     font-weight: 500;
+  }
+
+  #ll_m {
+    width: 80%;
+    height: 32.5vh;
+    object-fit: cover;
+    object-position: center;
   }
 }
