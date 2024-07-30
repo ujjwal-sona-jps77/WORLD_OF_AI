@@ -10,9 +10,9 @@ change.addEventListener("mouseover" , function(){
     crsr.style.width = `3vw`
     crsr.style.height = `5vh`
     crsr.style.backgroundColor = "#white"
-})
+});
 change.addEventListener("mouseleave" , function(){
     crsr.style.width = `20px`
     crsr.style.height = `20px`
     crsr.style.backgroundColor = `#edbfff`
-})
+});;
