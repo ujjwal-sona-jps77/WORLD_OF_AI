@@ -59,6 +59,16 @@ function menu_mobile(){
   })
 }
 
+
+function loaderAnimation() {
+  var loader = document.querySelector(".loader")
+  setTimeout(function () {
+      loader.style.top = "-100%"
+  }, 3700)
+}
+
+
 menu_animation();
 mousefollower();
 menu_mobile();
+loaderAnimation();

@@ -555,14 +555,13 @@
     align-items: center;
     padding: 2vw;
     z-index: 99999;
-    backdrop-filter: blur(1px);
   }
 
   .nav > #head_m {
     font-family: "Indie Flower", cursive;
     font-size: 10vw;
-    color: white;
-    mix-blend-mode: difference;
+    color: #fff;
+    font-weight: 900;
   }
 
   .nav i {
@@ -574,7 +573,7 @@
 
   .page1_m {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-color: #00000044;
     display: flex;
     justify-content: center;
@@ -617,7 +616,7 @@
   .page2_m {
     background-color: #00000044;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -629,7 +628,7 @@
   .page3_m {
     background-color: #00000044;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     position: relative;
     display: flex;
     justify-content: center;
