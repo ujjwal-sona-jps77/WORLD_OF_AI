@@ -528,6 +528,7 @@
     position: fixed;
     top: 0;
     right: -100%;
+    
     z-index: 99;
     background-color: wheat;
     transition: all ease-in-out 1s;
