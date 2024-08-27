@@ -15,7 +15,14 @@
 
 
 
-html.lenis, html.lenis body {
+
+
+@media (min-width: 1000px) and (max-width: 2200px) {
+  a {
+    cursor: url(./custom_cursor_selector.png) , pointer;
+  }
+
+  html.lenis, html.lenis body {
   height: auto;
 }
 
@@ -34,11 +41,6 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
-
-@media (min-width: 1000px) and (max-width: 2200px) {
-  a {
-    cursor: url(./custom_cursor_selector.png) , pointer;
-  }
   
   i {
     cursor: url(./custom_cursor_selector.png) , pointer;
@@ -1620,4 +1622,24 @@ html.lenis, html.lenis body {
     gap: 3vw;
     margin-top: 5vw;
   }
+
+  html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
 }
